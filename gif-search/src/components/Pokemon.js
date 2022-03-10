@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const pokemon = ({ pokemon }) => {
+const Pokemon = ({ pokemon }) => {
 
     return (
       <>  
@@ -18,12 +18,14 @@ const pokemon = ({ pokemon }) => {
           </div>
           <div className='see-details-wrapper'>
             <hr className='border-details'/>
-            <span className='see-details'>See Details</span>
+            <Link to={`/pokemon/${pokemon.id}`}>
+              <span className='see-details'>See Details</span>
+            </Link>
           </div>
         </div>
       </>
     )
 }
 
-export default pokemon; 
+export default Pokemon; 
 

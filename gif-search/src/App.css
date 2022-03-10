@@ -1,17 +1,21 @@
-/* ================================= 
-  Element Styles
-==================================== */
+/* generic elements styling */
 
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
-  font: 1em/1.5 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #4c4c4c;
   background: #f6f7f7;
-  padding-top: 145px;
-  padding-bottom: 3em;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   margin: 0;
 }
 
@@ -26,36 +30,24 @@ li {
   list-style: none;
 }
 
-input {
-  font-size: 1.12em;
-  height: 46px;
-  padding-bottom: 1em;
-  padding-left: 0;
-  background: none;
-  border: none;
-  outline: 0;
-  border-bottom: 4px solid #e4e4e4;
-  transition: border-color 0.4s;
-}
-
-input:focus {
-  border-color: #c1c1c1;
-}
-
 button {
-  width: 40px;
+  width: 70px;
   height: 35px;
-  border: 0;
-  background: none;
+  background-color: #367aac;
   cursor: pointer;
-  outline: 0;
-  position: relative;
-  z-index: 2000;
+  border: solid #367aac;
+  padding: 0.5rem;
+  border-radius: 15px;
 }
 
-/* ================================= 
-  Page Components
-==================================== */
+button:hover {
+  background: white;
+  border: solid #367aac;
+  color: #367aac;
+}
+
+/* component styling */
+
 .img-name-wrapper {
   display: flex;
   flex-direction: column;

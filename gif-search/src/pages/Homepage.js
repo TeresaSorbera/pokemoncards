@@ -8,7 +8,10 @@ import Loader from '../components/Loader';
 const Homepage = () => {
 
     const [pokemon, setPokemon] = useState([]);
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
+    const [currentPageUrl, setCurrentPageUrl] = useState("https://pokeapi.co/api/v2/pokemon/${id}");
+    const [nextPageUrl, setNextPageUrl] = useState();
+    const [prevPageUrl, setPrevPageUrl] = useState();
 
     const getPokemonList = async () => {
         let pokemonArray = [];
